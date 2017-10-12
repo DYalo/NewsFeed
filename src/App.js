@@ -8,7 +8,7 @@ var {EventEmitter} = require('fbemitter');
 
 window.ee = new EventEmitter();
 
-class News extends React.PureComponent {
+class News extends Component {
     render () {
       const { data } = this.props
       const { length } = data

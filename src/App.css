@@ -74,7 +74,8 @@ p {
 
 .add__Likes > * {
   float: right;
-  margin-right: 5px; 
+  margin: 0 7px 2px 2px; 
+ 
 }
 
 
