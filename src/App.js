@@ -51,14 +51,15 @@ class Arcticle extends Component {
               <div  className="article">
                   <p  className="news__author">{author}:</p>
                   <p  className="news__text">{text}</p>
-                  
+
                   <a href="#"
                    onClick={this.readmoreClick}
                    className= {"news__readMore " + (visible ? 'none':'')}>
                    More
                    </a>
-                   <Likes />
+                  
                   <p className= {"news__bigText " + (visible ?'':'none')}>{bigText}</p>
+                   <Likes />
                   
               </div>
               );
@@ -112,8 +113,8 @@ class Add extends Component {
     }
 
     render() {
-      var agreeNotChecked, authorIsEmpty, textIsEmpty;
-      [agreeNotChecked , authorIsEmpty ,textIsEmpty ,] = [this.state.agreeNotChecked,this.state.authorIsEmpty ,this.state.textIsEmpty];
+     
+      const {agreeNotChecked , authorIsEmpty ,textIsEmpty ,} = this.state;
         
         return(
           <form className="add cf">
@@ -172,15 +173,14 @@ class Likes extends Component {
   render() {
       return(
         <div className="add__Likes">
-        <button onClick={this.onIncrease}>like</button>
+        <button className="btn_like" onClick={this.onIncrease}>like</button>
         <p>Likes:{this.state.like}</p>
-        <button onClick={this.onDecrease}>dislike</button>
+        <button className="btn_like" onClick={this.onDecrease}>dislike</button>
         </div>
         );
   }
 
 }
-
 
 class App extends Component {
   state = {

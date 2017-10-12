@@ -17,6 +17,7 @@ p {
     margin: 0 0 5px 0;
     box-shadow: 2px 2px 5px -1px  rgb(0,  81, 202);
     padding:  3px 5px;
+    position: relative;
 }
 .news__author {
     text-decoration:  underline;
@@ -48,20 +49,32 @@ p {
     border: none;
     font-size:  12px;
 }
-.add__btn {
+.add__btn, .btn_like {
     box-sizing: content-box;
     color:  #FFF;
-    text-transform: uppercase;
+     text-transform: uppercase;
     background: #007DDC;
 }
 .add__btn:disabled  {
     background: #CCC;
     color:  #999;
 }
+.btn_like{
+  display:  block;
+  border: 1px solid rgba(0, 89, 181,  0.82);
+}
+
+.add__Likes {
+    position: absolute;
+    
+    right:0;
+    bottom:0;
+    
+}
 
 .add__Likes > * {
   float: right;
-  margin-right: 3px; 
+  margin-right: 5px; 
 }
 
 
