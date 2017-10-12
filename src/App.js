@@ -51,15 +51,15 @@ class Arcticle extends Component {
               <div  className="article">
                   <p  className="news__author">{author}:</p>
                   <p  className="news__text">{text}</p>
-
+                  
                   <a href="#"
                    onClick={this.readmoreClick}
                    className= {"news__readMore " + (visible ? 'none':'')}>
                    More
                    </a>
-
+                   <Likes />
                   <p className= {"news__bigText " + (visible ?'':'none')}>{bigText}</p>
-                  <Likes />
+                  
               </div>
               );
       }
@@ -171,9 +171,11 @@ class Likes extends Component {
 
   render() {
       return(
+        <div className="add__Likes">
         <button onClick={this.onIncrease}>like</button>
         <p>Likes:{this.state.like}</p>
-        <button onClick={this.onDecrease}>like</button>
+        <button onClick={this.onDecrease}>dislike</button>
+        </div>
         );
   }
 

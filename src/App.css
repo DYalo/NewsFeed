@@ -13,7 +13,7 @@ p {
 .article  {
     background: #FFF;
     border: 1px solid rgba(0, 89, 181,  0.82);
-    width:  600px;
+    width: 700px;
     margin: 0 0 5px 0;
     box-shadow: 2px 2px 5px -1px  rgb(0,  81, 202);
     padding:  3px 5px;
@@ -57,6 +57,11 @@ p {
 .add__btn:disabled  {
     background: #CCC;
     color:  #999;
+}
+
+.add__Likes > * {
+  float: right;
+  margin-right: 3px; 
 }
 
 
