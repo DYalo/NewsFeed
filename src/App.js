@@ -51,15 +51,22 @@ class Arcticle extends Component {
               <div  className="article">
                   <p  className="news__author">{author}:</p>
                   <p  className="news__text">{text}</p>
-
-                  <a href="#"
+                  <p className= {"news__bigText " + (visible ?'':'none')}>{bigText}</p>
+                   
+                   <div class="flexHelp">
+                    <div>
+                      <a href="#"
                    onClick={this.readmoreClick}
                    className= {"news__readMore " + (visible ? 'none':'')}>
                    More
                    </a>
+                    </div>
+                    <Likes />
+                   </div>
+
                   
-                  <p className= {"news__bigText " + (visible ?'':'none')}>{bigText}</p>
-                   <Likes />
+                  
+                  
                   
               </div>
               );

@@ -63,21 +63,20 @@ p {
   display:  block;
   border: 1px solid rgba(0, 89, 181,  0.82);
 }
-
-.add__Likes {
-    position: absolute;
-    
-    right:0;
-    bottom:0;
-    
-}
-
 .add__Likes > * {
-  float: right;
-  margin: 0 7px 2px 2px; 
- 
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.add__Likes {
+    display: flex;
+    align-items: center;
 }
 
+.flexHelp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
